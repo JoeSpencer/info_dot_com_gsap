@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import { Route } from "react-router-dom";
+
+import Home from "./components/Home";
+import Mazda from "./components/Mazda";
+import Sparq from "./components/Sparq";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path="/" render={(routeProps) => <Home {...routeProps} />} />
+      <Route
+        exact
+        path="/sparq"
+        render={(routeProps) => <Sparq {...routeProps} />}
+      />
+      <Route
+        exact
+        path="/mazda"
+        render={(routeProps) => <Mazda {...routeProps} />}
+      />
     </div>
   );
 }
