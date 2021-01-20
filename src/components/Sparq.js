@@ -148,28 +148,30 @@ class Sparq extends React.Component {
 
               <section className="body-font">
                 <div ref={(div) => (this.item3 = div)} className="item3">
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
                     iOS
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
                     Android
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
                     Design
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
                     Prototyping
                   </span>
+                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                    Strategy
+                  </span>
                   <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-                    Balancing uniformity and personality
+                    Creating a global community for UHG
                   </h1>
                   <p className="mb-8 leading-relaxed">
-                    For this project, templates simply would not work. Each
-                    dealership is a unique business and has its own personality,
-                    but Mazda's strong brand identity needed to come through in
-                    the dealer site. I introduced the client to the concept of
-                    Atomic design, using the atoms of the brand to build
-                    components that could be infinitely re-arranged in layouts.
+                    UnitedHealth Group has tens of thousands of employees,
+                    distributed globally. Interviews revealed a sense of
+                    disconnection from the mothership and the lack of a common
+                    communication channel. Sparq is a standalone mobile
+                    application that unites all employees in a common space.
                   </p>
                 </div>
                 <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-center">

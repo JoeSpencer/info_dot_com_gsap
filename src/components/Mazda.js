@@ -4,6 +4,7 @@ import { TimelineMax, Power1 } from "gsap/all";
 import maz from "../img/Mazda/MazdaIcon.png";
 import compo from "../img/Mazda/Components.png";
 import list from "../img/Mazda/ListingWeb.png";
+import nextSparq from "../img/Sparq/Next_Sparq.png";
 
 class Mazda extends React.Component {
   constructor(props) {
@@ -217,16 +218,11 @@ class Mazda extends React.Component {
             <div class="flex flex-wrap -m-4">
               <div class="xl:w-1/3 md:w-1/2 p-4">
                 <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                  />
                   <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    MAZDA
                   </h3>
                   <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Chichen Itza
+                    Tier 3 Project
                   </h2>
                   <p class="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -238,14 +234,14 @@ class Mazda extends React.Component {
                 <div class="bg-gray-100 p-6 rounded-lg">
                   <img
                     class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/721x401"
+                    src={nextSparq}
                     alt="content"
                   />
                   <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    iOS APP
                   </h3>
                   <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Colosseum Roma
+                    Sparq
                   </h2>
                   <p class="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
