@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import { TimelineMax, Power1 } from "gsap/all";
+import { gsap, Power1 } from "gsap";
 import maz from "../img/Mazda/MazdaIcon.png";
 import compo from "../img/Mazda/Components.png";
 import list from "../img/Mazda/ListingWeb.png";
@@ -9,7 +9,7 @@ import nextSparq from "../img/Sparq/Next_Sparq.png";
 class Mazda extends React.Component {
   constructor(props) {
     super(props);
-    this.timeline = new TimelineMax({ paused: true });
+    this.timeline = new gsap.timeline({ paused: true });
   }
 
   componentDidMount() {

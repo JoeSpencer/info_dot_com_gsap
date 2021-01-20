@@ -1,13 +1,13 @@
 import React from "react";
 import "../index.css";
-import { TimelineMax, Power1 } from "gsap/all";
+import { gsap, Power1 } from "gsap";
 import { ReactComponent as Owl } from "../img/owl-side-view-outline.svg";
 import bio from "../img/IMG_0745.jpg";
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.timeline = new TimelineMax({ paused: true });
+    this.timeline = new gsap.timeline({ paused: true });
   }
 
   componentDidMount() {

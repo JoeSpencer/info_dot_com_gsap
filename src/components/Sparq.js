@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import { TimelineMax, Power1 } from "gsap/all";
+import { gsap, Power1 } from "gsap";
 import sparqicon from "../img/Sparq/SparqIcon.png";
 import sparq1 from "../img/Sparq/sparq1.png";
 import sparq2 from "../img/Sparq/sparq2.png";
@@ -10,7 +10,7 @@ import sparq4 from "../img/Sparq/sparq4.png";
 class Sparq extends React.Component {
   constructor(props) {
     super(props);
-    this.timeline = new TimelineMax({ paused: true });
+    this.timeline = new gsap.timeline({ paused: true });
   }
 
   componentDidMount() {
