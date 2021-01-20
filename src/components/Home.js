@@ -123,9 +123,9 @@ class Home extends React.Component {
                           practices and specializes in interaction, strategy,
                           and prototyping.
                         </p>
+                        <p className="font-bold mt-5">See my work:</p>
                       </div>
                       <ul className="list-none mt-1">
-                        <p className="font-bold mt-4">See my work:</p>
                         <li className="py-2">
                           <div className="flex items-center">
                             <div
