@@ -148,19 +148,19 @@ class Sparq extends React.Component {
 
               <section className="body-font">
                 <div ref={(div) => (this.item3 = div)} className="item3">
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                     iOS
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                     Android
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                     Design
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                     Prototyping
                   </span>
-                  <span class="inline-block py-1 px-2 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
+                  <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">
                     Strategy
                   </span>
                   <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
@@ -228,61 +228,35 @@ class Sparq extends React.Component {
               </div>
             </div>
             <div class="flex flex-wrap -m-4">
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Chichen Itza
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/721x401"
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Colosseum Roma
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/722x402"
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Great Pyramid of Giza
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
+              <div class="p-4 md:w-1/3">
+                <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <h2 class="text-gray-900 text-lg title-font font-medium">
+                      Mazda Tier 3
+                    </h2>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="leading-relaxed text-base">
+                      A component system for Mazda USA's dealer network.
+                    </p>
+                    <button
+                      class="mt-3 text-indigo-500 inline-flex items-center"
+                      onClick={(e) => this.changePage(e, "/mazda")}
+                    >
+                      See project
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,7 +4,6 @@ import { gsap, Power1 } from "gsap";
 import maz from "../img/Mazda/MazdaIcon.png";
 import compo from "../img/Mazda/Components.png";
 import list from "../img/Mazda/ListingWeb.png";
-import nextSparq from "../img/Sparq/Next_Sparq.png";
 
 class Mazda extends React.Component {
   constructor(props) {
@@ -58,7 +57,12 @@ class Mazda extends React.Component {
           ease: Power1.easeInOut,
         },
         "+=.1"
-      );
+      )
+      .from(this.item5, 0.4, {
+        autoAlpha: 0,
+        y: 25,
+        ease: Power1.easeInOut,
+      });
 
     this.timeline.play();
   }
@@ -148,20 +152,42 @@ class Mazda extends React.Component {
                   </div>
                   <div className="lg:flex-grow md:w-1/2 lg:pl-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <div ref={(div) => (this.item4 = div)} className="item4">
-                      <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                      <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                         Web
                       </span>
-                      <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                      <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                         Research
                       </span>
-                      <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                      <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                         Design
                       </span>
-                      <span class="inline-block py-1 px-2 mr-2 mb-4 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+                      <span class="inline-block py-1 px-3 mr-2 mb-4 rounded-full bg-gray-50 text-gray-400 text-xs font-bold">
                         Prototyping
                       </span>
                       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Balancing uniformity and personality
+                        Balancing brand uniformity and dealer personality
+                      </h1>
+                      <p className="mb-8 leading-relaxed">
+                        Mazda engineers cars that deliver pure driving joy, but
+                        they had a problem. Their dealer network had no unified
+                        look and feel for their websites, and was further
+                        complicated by the lack of communication amongst their
+                        platform providers.
+                        <br></br>
+                        <br></br>
+                        Through research, demonstration, and testing, we offered
+                        a solution that was both agile and platform agnostic.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section className="text-gray-50 body-font pt-2 sm:pt-24 pb-24">
+                <div ref={(div) => (this.item5 = div)} className="item5">
+                  <div className="container mx-auto flex md:flex-row flex-col items-center">
+                    <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                        Infinite layouts
                       </h1>
                       <p className="mb-8 leading-relaxed">
                         For this project, templates simply would not work. Each
@@ -173,31 +199,13 @@ class Mazda extends React.Component {
                         re-arranged in layouts.
                       </p>
                     </div>
-                  </div>
-                </div>
-              </section>
-              <section className="text-gray-50 body-font pt-2 sm:pt-24 pb-24">
-                <div className="container mx-auto flex md:flex-row flex-col items-center">
-                  <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                      Balancing uniformity and personality
-                    </h1>
-                    <p className="mb-8 leading-relaxed">
-                      For this project, templates simply would not work. Each
-                      dealership is a unique business and has its own
-                      personality, but Mazda's strong brand identity needed to
-                      come through in the dealer site. I introduced the client
-                      to the concept of Atomic design, using the atoms of the
-                      brand to build components that could be infinitely
-                      re-arranged in layouts.
-                    </p>
-                  </div>
-                  <div className="lg:w-full md:w-1/2 w-5/6">
-                    <img
-                      alt="gallery"
-                      className="w-full object-center block"
-                      src={list}
-                    />
+                    <div className="lg:w-full md:w-1/2 w-5/6">
+                      <img
+                        alt="gallery"
+                        className="w-full object-center block"
+                        src={list}
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
@@ -216,56 +224,36 @@ class Mazda extends React.Component {
               </div>
             </div>
             <div class="flex flex-wrap -m-4">
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    MAZDA
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Tier 3 Project
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={nextSparq}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    iOS APP
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Sparq
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/3 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/722x402"
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Great Pyramid of Giza
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
+              <div class="p-4 md:w-1/3">
+                <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <h2 class="text-gray-900 text-lg title-font font-medium">
+                      Sparq App
+                    </h2>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="leading-relaxed text-base">
+                      A native mobile application built to inform and connect
+                      UHG employees.
+                    </p>
+                    <button
+                      class="mt-3 text-indigo-500 inline-flex items-center"
+                      onClick={(e) => this.changePage(e, "/sparq")}
+                    >
+                      See project
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

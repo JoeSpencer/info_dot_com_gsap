@@ -124,7 +124,8 @@ class Home extends React.Component {
                           and prototyping.
                         </p>
                       </div>
-                      <ul className="list-none mt-6">
+                      <ul className="list-none mt-1">
+                        <p className="font-bold mt-4">See my work:</p>
                         <li className="py-2">
                           <div className="flex items-center">
                             <div
