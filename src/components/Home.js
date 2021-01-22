@@ -61,6 +61,16 @@ class Home extends React.Component {
           ease: Power1.easeInOut,
         },
         "-=.1"
+      )
+      .from(
+        this.item6,
+        0.4,
+        {
+          autoAlpha: 0,
+          y: 25,
+          ease: Power1.easeInOut,
+        },
+        "-=.1"
       );
 
     this.timeline.play();
@@ -178,10 +188,36 @@ class Home extends React.Component {
                             </div>
                           </div>
                         </li>
+                        <li className="py-2">
+                          <div className="flex items-center">
+                            <div
+                              ref={(div) => (this.item5 = div)}
+                              className="item5"
+                            >
+                              <a
+                                className="mt-3 text-indigo-500 inline-flex items-center"
+                                href="https://uxdesign.cc/building-for-usability-not-just-accessibility-aa12d35359a3"
+                              >
+                                Article on usability
+                                <svg
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  class="w-4 h-4 ml-2"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
                       </ul>
                     </div>
 
-                    <div ref={(div) => (this.item5 = div)} className="item5">
+                    <div ref={(div) => (this.item6 = div)} className="item6">
                       <span class="inline-flex sm:ml-auto sm:mt-8 mt-24 justify-center sm:justify-start">
                         <a
                           href="https://twitter.com/spencerjoe"

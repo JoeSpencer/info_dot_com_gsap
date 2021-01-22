@@ -86,6 +86,43 @@ class Sparq extends React.Component {
   render() {
     return (
       <div className="home text-gray-900 body-font tydye">
+        <div class="bg-indigo-600">
+          <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center flex-wrap">
+              <div class="flex items-center mr-4">
+                <span class="flex p-2 rounded-lg bg-indigo-800">
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                </span>
+                <p class="ml-3 font-medium text-white truncate">
+                  <span class="hidden md:inline">
+                    Big news! Sparq won an award!
+                  </span>
+                </p>
+              </div>
+              <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+                <a
+                  href="https://www.bintelligence.com/blog/2021/1/12/7-executives-52-companies-and-137-products-win-2021-big-innovation-award"
+                  class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
+                >
+                  Check it out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container px-4 pt-8 mx-auto">
           <div className="home-container">
             <div className="container mx-auto px-4 pb-24">
@@ -166,7 +203,7 @@ class Sparq extends React.Component {
                   <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
                     Creating a global community for UHG
                   </h1>
-                  <p className="mb-8 leading-relaxed">
+                  <p className="mb-4 leading-relaxed">
                     UnitedHealth Group has tens of thousands of employees,
                     distributed globally. Interviews revealed a sense of
                     disconnection from the mothership and the lack of a common
